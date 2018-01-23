@@ -2,10 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.misc import imread
 
-#adds gaussian noise to an image
 def sigmoid(x):
     return 1. / (1. + np.exp(-x))
 
+#adds gaussian noise to an image
 def add_gaussian_noise(im,prop,varSigma):
     N = int(np.round(np.prod(im.shape)*prop))
     index = np.unravel_index(np.random.permutation(np.prod(im.shape))[1:N],im.shape)
