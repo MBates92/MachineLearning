@@ -165,7 +165,7 @@ varSigma = 0.1
 im = imread('cavapoo.png')
 im = im/255
 
-#Parameters for Energy function pulled from Bishop Ch. 8.3.3
+#Parameters for Energy function
 h=0.0
 beta = 3.0
 nu = 1.0
